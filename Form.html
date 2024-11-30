@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./Company-Title.png" alt="CodersBrain Logo">
+            </div>
+            <nav class="nav">
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="menu" id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="./index.html">Services</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <div class="form-container">        
+        <form id="dynamicForm" method="post" enctype="multipart/form-data">
+            <div class="form-grid">                
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your contact number" required>
+                </div>
+                <div class="form-group">
+                    <label for="requirement">Requirement:</label>
+                    <select id="requirement" name="requirement" required>
+                        <option value="">Select an option</option>
+                        <option value="hireDeveloper">Hire Developers</option>
+                        <option value="jobseeker">Jobseeker</option>
+                        <option value="enquiry">Enquiry</option>
+                    </select>
+                </div>
+            </div>
+            <div id="descriptionContainer" class="hidden">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Describe your requirement"></textarea>
+            </div>
+            <div id="resumeContainer" class="hidden">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
