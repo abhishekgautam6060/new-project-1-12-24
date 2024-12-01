@@ -67,7 +67,7 @@ body {
 }
 
 .hero h3 {    
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #333;
 }
 
@@ -564,3 +564,67 @@ button:hover {
     margin: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+
+.front-section{
+    display: flex;
+    margin: 20px;
+}
+
+.front-section img{
+    border-radius: 50%;
+}
+
+.front-section p{
+    margin: 30px;
+    
+}
+
+.front-section-2{   
+    padding: 50px;
+    background-color: #f8faff;
+    
+   
+}
+
+.font-section-image2{
+    text-align: center; 
+    align-items: center;
+}
+.front-section-2 li {    
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.front-section-2 img{
+    border-radius: 80%;
+    width: 30%;
+    margin: 20px;
+    
+}
+.front-section-points{
+    margin: 40px;
+}
+
+
+.front-section-5{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 20px;
+}
+.font-section-para p{
+    font-size: 20px;
+}
+.font-section-para{
+    text-align: center;
+    padding: 60px;
+}
+
+.font-section-5-image img{
+    width: 100%;
+    border-radius: 80%;
+    
+}
+
