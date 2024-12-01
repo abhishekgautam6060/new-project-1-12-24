@@ -1,3 +1,21 @@
+
+document.getElementById("hamburger").addEventListener("click", function () {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+});
+
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+});
+
+
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const stats = document.querySelectorAll(".stat h2");
     stats.forEach((stat) => {
@@ -13,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 15);
     });
 });
-
 
 
 document.getElementById('requirement').addEventListener('change', function () {
